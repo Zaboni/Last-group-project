@@ -1,0 +1,8 @@
+# ninja log v5
+2	326	1701373419808174649	CMakeFiles/Last_group_project.dir/MainTest.cpp.o	2c6ff56b594c97a3
+0	47	1701373585281177136	build.ninja	e87d893641aead06
+1	450	1701373348762715268	CMakeFiles/Last_group_project.dir/main.cpp.o	65c74627a3c51290
+0	452	1701373348763546058	CMakeFiles/Last_group_project.dir/mainTest.cpp.o	3dfe347719ff505b
+1	487	1701373348801014858	CMakeFiles/Last_group_project.dir/Graph.cpp.o	8ee180fe02e2223e
+0	48	1701373585281177136	build.ninja	e87d893641aead06
+2	134	1701373585420575357	Last_group_project	bdb94400904274d3

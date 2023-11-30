@@ -1,0 +1,4 @@
+/Users/aldo/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/aldo/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/aldo/Documents/GitHub/Last-group-project -B /Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug

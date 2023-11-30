@@ -1,0 +1,4 @@
+/Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug/CMakeFiles/Last_group_project.dir
+/Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug/CMakeFiles/Last_group_project_tests.dir
+/Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
