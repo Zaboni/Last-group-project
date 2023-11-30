@@ -82,13 +82,11 @@ void Graph::BFSUtil(int s, bool visited[], std::vector<int>& parent) {
 
 void Graph::printPathRecursive(int s, int v, std::vector<int>& parent) {
     if (v == s) {
-        std::cout << s << " ";
-        return;
+        std::cout << s << " "; // Print source vertex
     } else if (parent[v] == -1) {
-        std::cout << "No path from " << s << " to " << v << std::endl;
-        return;
+        std::cout << "No path from " << s << " to " << v << " exists" << std::endl;
+    } else {
+        printPathRecursive(s, parent[v], parent); // Recursive call for the predecessor
+        std::cout << v << " "; // Print the current vertex
     }
-
-    printPathRecursive(s, parent[v], parent);
-    std::cout << v << " ";
 }
