@@ -1,15 +1,16 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include <list>
-#include <vector>
+#include "Node.h"
 #include <queue>
 #include <iostream>
 
 class Graph {
 public:
+    Graph(); // Default constructor
     Graph(int V); // Constructor
     Graph(const Graph& other); // Copy constructor
+    Graph& operator=(const Graph& other); // Assignment operator
     ~Graph(); // Destructor
 
     void addEdge(int v, int w); // Function to add an edge to graph
@@ -19,9 +20,7 @@ public:
 
 private:
     int V; // No. of vertices
-    std::list<int>* adj; // Pointer to an array containing adjacency lists
-    void BFSUtil(int s, bool visited[], std::vector<int>& parent);
-    void printPathRecursive(int s, int v, std::vector<int>& parent);
+    Node** adj; // Pointer to an array containing adjacency lists
 };
 
 #endif // GRAPH_H
