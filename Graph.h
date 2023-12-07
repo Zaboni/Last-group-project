@@ -17,6 +17,7 @@ public:
     void BFS(int s); // BFS traversal from a given source s
     void printBFS(int s); // Print BFS tree from a given source
     void printShortestPath(int s, int v); // Print shortest path from s to v
+    Node* getAdjacency(int v); // Getter for adjacency list of a vertex
 
 private:
     int V; // No. of vertices

@@ -60,6 +60,10 @@ void Graph::addEdge(int v, int w) {
     adj[v] = newNode;
 }
 
+Node* Graph::getAdjacency(int v) {
+    return adj[v];
+}
+
 void Graph::BFS(int s) {
     bool *visited = new bool[V];
     for (int i = 1; i < V; i++) //initialize the visited list to false
