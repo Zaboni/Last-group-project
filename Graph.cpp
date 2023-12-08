@@ -107,14 +107,47 @@ void Graph::printBFS(int s) {
     }
 }
 
-void Graph::printShortestPath(int s, int v) {
-    if (s == v){
-        std::cout << "Shortest path from " << s << " to " << v << " is " << s << std::endl;
+int minDistance(const std::vector<int>& dist, const std::vector<bool>& visited) {
+    int min = std::numeric_limits<int>::max();
+    int min_index = -1;
+
+    for (int v = 0; v < dist.size(); v++) {
+        if (!visited[v] && dist[v] <= min) {
+            min = dist[v];
+            min_index = v;
+        }
     }
-    else if (adj[v] == nullptr) {
-        std::cout << "No path from " << s << " to " << v << " exists" << std::endl;
+    return min_index;
+}
+
+void Graph::printShortestPath(int s, int v) {
+    std::vector<int> dist(V, std::numeric_limits<int>::max());
+    std::vector<bool> visited(V, false);
+    std::vector<int> pred(V, -1);
+
+    dist[s] = 0;
+
+    for (int count = 0; count < V - 1; count++) {
+        int u = minDistance(dist, visited);
+        visited[u] = true;
+        for (Node* node = adj[u]; node != nullptr; node = node->getNext()) {
+            int weight = 1; // Assuming a constant weight of 1 for all edges.
+            int alt = dist[u] + weight;
+            int neighbor = node->getData();
+            if (!visited[neighbor] && alt < dist[neighbor]) {
+                dist[neighbor] = alt;
+                pred[neighbor] = u;
+            }
+        }
+    }
+
+    std::cout << "Shortest path from " << s << " to " << v << ": ";
+    if (pred[v] == -1) {
+        std::cout << "No path exists" << std::endl;
     } else {
-        printShortestPath(s, v);
-        std::cout<< "->" << v;
+        for (int cur = v; cur != s; cur = pred[cur]) {
+            std::cout << cur << " <- ";
+        }
+        std::cout << s << std::endl;
     }
 }

@@ -1,18 +1,15 @@
 # ninja log v5
-180	215	1702007297401309116	Last_group_project_tests	19b89e4e853585d7
-0	52	1702007697790109748	build.ninja	e87d893641aead06
+4	198	1702008086244855993	Last_group_project_tests	67926ec7827ee05
+1	552	1702007201982260622	CMakeFiles/Last_group_project.dir/MainTest.cpp.o	2c6ff56b594c97a3
+1	431	1702006596285615019	CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o	f78ed09ac9aaa468
+0	66	1702008286656623098	build.ninja	e87d893641aead06
 0	448	1702006596303630267	CMakeFiles/Last_group_project_tests.dir/Graph.cpp.o	797751cbaf105222
 6	179	1702007297308053734	CMakeFiles/Last_group_project_tests.dir/Node.cpp.o	c183cb06a313183d
+2	402	1702006782562800911	CMakeFiles/Last_group_project_tests.dir/main.cpp.o	f49e03fd005dd9d9
+0	476	1701969935946013635	CMakeFiles/Last_group_project.dir/Graph.cpp.o	8ee180fe02e2223e
 0	446	1701969935915812661	CMakeFiles/Last_group_project.dir/main.cpp.o	65c74627a3c51290
 0	170	1701969935641475355	CMakeFiles/Last_group_project.dir/Node.cpp.o	1f7f2a63ea82236d
 0	452	1701373348763546058	CMakeFiles/Last_group_project.dir/mainTest.cpp.o	3dfe347719ff505b
-0	476	1701969935946013635	CMakeFiles/Last_group_project.dir/Graph.cpp.o	8ee180fe02e2223e
-2	402	1702006782562800911	CMakeFiles/Last_group_project_tests.dir/main.cpp.o	f49e03fd005dd9d9
-1	552	1702007201982260622	CMakeFiles/Last_group_project.dir/MainTest.cpp.o	2c6ff56b594c97a3
-1	431	1702006596285615019	CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o	f78ed09ac9aaa468
-6	102	1702007260476561874	Last_group_project	3d5127d11c53917
-0	66	1702007697790109748	build.ninja	e87d893641aead06
 6	174	1702007697974491185	CMakeFiles/common_objects.dir/Node.cpp.o	2517a7e0557e707e
-6	469	1702007698266942424	CMakeFiles/common_objects.dir/Graph.cpp.o	faa67630b0f6207a
-469	508	1702007698309620104	Last_group_project_tests	67926ec7827ee05
-2	34	1702007701905210743	Last_group_project	8285ee0afacd17b1
+454	495	1702007943287600473	Last_group_project	8285ee0afacd17b1
+1	453	1702007943242662548	CMakeFiles/common_objects.dir/Graph.cpp.o	faa67630b0f6207a
