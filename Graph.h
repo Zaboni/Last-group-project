@@ -4,6 +4,7 @@
 #include "Node.h"
 #include <queue>
 #include <iostream>
+#include <limits>
 
 class Graph {
 public:
