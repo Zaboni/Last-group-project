@@ -41,20 +41,43 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug/
 # =============================================================================
+# Object build statements for OBJECT_LIBRARY target common_objects
+
+
+#############################################
+# Order-only phony target for common_objects
+
+build cmake_object_order_depends_target_common_objects: phony || CMakeFiles/common_objects.dir
+
+build CMakeFiles/common_objects.dir/Graph.cpp.o: CXX_COMPILER__common_objects_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/Graph.cpp || cmake_object_order_depends_target_common_objects
+  DEP_FILE = CMakeFiles/common_objects.dir/Graph.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/aldo/Documents/GitHub/Last-group-project/.
+  OBJECT_DIR = CMakeFiles/common_objects.dir
+  OBJECT_FILE_DIR = CMakeFiles/common_objects.dir
+
+build CMakeFiles/common_objects.dir/Node.cpp.o: CXX_COMPILER__common_objects_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/Node.cpp || cmake_object_order_depends_target_common_objects
+  DEP_FILE = CMakeFiles/common_objects.dir/Node.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/aldo/Documents/GitHub/Last-group-project/.
+  OBJECT_DIR = CMakeFiles/common_objects.dir
+  OBJECT_FILE_DIR = CMakeFiles/common_objects.dir
+
+
+
+#############################################
+# Object library common_objects
+
+build common_objects: phony CMakeFiles/common_objects.dir/Graph.cpp.o CMakeFiles/common_objects.dir/Node.cpp.o
+
+# =============================================================================
 # Object build statements for EXECUTABLE target Last_group_project
 
 
 #############################################
 # Order-only phony target for Last_group_project
 
-build cmake_object_order_depends_target_Last_group_project: phony || CMakeFiles/Last_group_project.dir
-
-build CMakeFiles/Last_group_project.dir/Graph.cpp.o: CXX_COMPILER__Last_group_project_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/Graph.cpp || cmake_object_order_depends_target_Last_group_project
-  DEP_FILE = CMakeFiles/Last_group_project.dir/Graph.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aldo/Documents/GitHub/Last-group-project/.
-  OBJECT_DIR = CMakeFiles/Last_group_project.dir
-  OBJECT_FILE_DIR = CMakeFiles/Last_group_project.dir
+build cmake_object_order_depends_target_Last_group_project: phony || cmake_object_order_depends_target_common_objects
 
 build CMakeFiles/Last_group_project.dir/main.cpp.o: CXX_COMPILER__Last_group_project_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/main.cpp || cmake_object_order_depends_target_Last_group_project
   DEP_FILE = CMakeFiles/Last_group_project.dir/main.cpp.o.d
@@ -71,7 +94,7 @@ build CMakeFiles/Last_group_project.dir/main.cpp.o: CXX_COMPILER__Last_group_pro
 #############################################
 # Link the executable Last_group_project
 
-build Last_group_project: CXX_EXECUTABLE_LINKER__Last_group_project_Debug CMakeFiles/Last_group_project.dir/Graph.cpp.o CMakeFiles/Last_group_project.dir/main.cpp.o
+build Last_group_project: CXX_EXECUTABLE_LINKER__Last_group_project_Debug CMakeFiles/common_objects.dir/Graph.cpp.o CMakeFiles/common_objects.dir/Node.cpp.o CMakeFiles/Last_group_project.dir/main.cpp.o || common_objects
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/Last_group_project.dir
   POST_BUILD = :
@@ -86,14 +109,7 @@ build Last_group_project: CXX_EXECUTABLE_LINKER__Last_group_project_Debug CMakeF
 #############################################
 # Order-only phony target for Last_group_project_tests
 
-build cmake_object_order_depends_target_Last_group_project_tests: phony || CMakeFiles/Last_group_project_tests.dir
-
-build CMakeFiles/Last_group_project_tests.dir/Graph.cpp.o: CXX_COMPILER__Last_group_project_tests_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/Graph.cpp || cmake_object_order_depends_target_Last_group_project_tests
-  DEP_FILE = CMakeFiles/Last_group_project_tests.dir/Graph.cpp.o.d
-  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/aldo/Documents/GitHub/Last-group-project/.
-  OBJECT_DIR = CMakeFiles/Last_group_project_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/Last_group_project_tests.dir
+build cmake_object_order_depends_target_Last_group_project_tests: phony || cmake_object_order_depends_target_common_objects
 
 build CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o: CXX_COMPILER__Last_group_project_tests_unscanned_Debug /Users/aldo/Documents/GitHub/Last-group-project/MainTest.cpp || cmake_object_order_depends_target_Last_group_project_tests
   DEP_FILE = CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o.d
@@ -110,7 +126,7 @@ build CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o: CXX_COMPILER__Last
 #############################################
 # Link the executable Last_group_project_tests
 
-build Last_group_project_tests: CXX_EXECUTABLE_LINKER__Last_group_project_tests_Debug CMakeFiles/Last_group_project_tests.dir/Graph.cpp.o CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o
+build Last_group_project_tests: CXX_EXECUTABLE_LINKER__Last_group_project_tests_Debug CMakeFiles/common_objects.dir/Graph.cpp.o CMakeFiles/common_objects.dir/Node.cpp.o CMakeFiles/Last_group_project_tests.dir/MainTest.cpp.o || common_objects
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/Last_group_project_tests.dir
   POST_BUILD = :
@@ -152,7 +168,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/aldo/Documents/GitHub/Last-group-project/cmake-build-debug
 
-build all: phony Last_group_project Last_group_project_tests
+build all: phony common_objects Last_group_project Last_group_project_tests
 
 # =============================================================================
 # Built-in targets

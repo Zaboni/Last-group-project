@@ -14,6 +14,16 @@
 #############################################
 # Rule for compiling CXX files.
 
+rule CXX_COMPILER__common_objects_unscanned_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /Library/Developer/CommandLineTools/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+#############################################
+# Rule for compiling CXX files.
+
 rule CXX_COMPILER__Last_group_project_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc

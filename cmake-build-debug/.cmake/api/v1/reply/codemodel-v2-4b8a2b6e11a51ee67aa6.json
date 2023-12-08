@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,15 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Last_group_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Last_group_project-Debug-5284637db72c8450d15e.json",
+					"jsonFile" : "target-Last_group_project-Debug-574f313a0659af53e604.json",
 					"name" : "Last_group_project",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "Last_group_project_tests::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Last_group_project_tests-Debug-ba8292f60826186243a6.json",
+					"jsonFile" : "target-Last_group_project_tests-Debug-61c1d929b35aba695db2.json",
 					"name" : "Last_group_project_tests",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "common_objects::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-common_objects-Debug-48cf508f9ae69e0ea5b5.json",
+					"name" : "common_objects",
 					"projectIndex" : 0
 				}
 			]

@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Last_group_project"
+			"path" : "CMakeFiles/common_objects.dir/./Graph.cpp.o"
+		},
+		{
+			"path" : "CMakeFiles/common_objects.dir/./Node.cpp.o"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +13,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable",
+			"add_library",
 			"include_directories"
 		],
 		"files" : 
@@ -68,24 +71,8 @@
 			]
 		}
 	],
-	"id" : "Last_group_project::@6890427a1f51a3e7e1df",
-	"link" : 
-	{
-		"commandFragments" : 
-		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
-				"fragment" : "",
-				"role" : "flags"
-			}
-		],
-		"language" : "CXX"
-	},
-	"name" : "Last_group_project",
-	"nameOnDisk" : "Last_group_project",
+	"id" : "common_objects::@6890427a1f51a3e7e1df",
+	"name" : "common_objects",
 	"paths" : 
 	{
 		"build" : ".",
@@ -125,9 +112,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "Node.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "OBJECT_LIBRARY"
 }
