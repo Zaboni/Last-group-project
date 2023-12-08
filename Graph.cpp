@@ -10,7 +10,7 @@ Graph::Graph(int V) { // Constructor with parameter to set number of vertices
     for (int i = 1; i < V; ++i) {
         adj[i] = nullptr;
     }
-    
+
 }
 
 Graph::Graph(const Graph &other) : V(other.V), adj(new Node*[other.V]) {
@@ -107,7 +107,7 @@ void Graph::printBFS(int s) {
     }
 }
 
-int minDistance(const std::vector<int>& dist, const std::vector<bool>& visited) {
+int Graph::minDistance(const std::vector<int>& dist, const std::vector<bool>& visited) {
     int min = std::numeric_limits<int>::max();
     int min_index = -1;
 

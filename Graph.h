@@ -22,6 +22,8 @@ public:
 private:
     int V; // No. of vertices
     Node** adj; // Pointer to an array containing adjacency lists
+
+    int minDistance(const std::vector<int>& dist, const std::vector<bool>& visited); // Add this line
 };
 
 #endif // GRAPH_H
